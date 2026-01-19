@@ -5,5 +5,12 @@ package Specification
   part
   #pid 3663#
   package Requirements
+    #pid 4066#
+    requirement Requirement_4066
+    is
+      @@
+      @@
+    requirement
+
   package
 package
