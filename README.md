@@ -1,6 +1,8 @@
+# name of subject :
 # Library management system
 
-TODO
+Libraries today are about more than just shelves of books—they are community and digital hubs. However, the software they use is often outdated. This project uses the PEGS methodology to design a better solution: a Library Management System that covers all the essentials while being flexible enough to handle the demands of the modern era.
+
 
 ## Requirements Documentation Strategy
 
