@@ -224,66 +224,64 @@ it can currently be borrowed.</p>
 <p><strong>Loan policy:</strong> A set of rules defining how long and
 how many books a member can borrow.</p>
 <h3 id="e2">E.2 Components</h3>
-<p><code>E.2.1</code>The environment of the system includes several
-real-world elements:</p>
-<p><code>E.2.2</code>A collection of books composed of multiple physical
-copies.</p>
-<p><code>E.2.3</code>People interacting with the library, such as
+<p>The environment of the system includes several real-world
+elements:</p>
+<p><code>E.2.1</code> A collection of books composed of multiple
+physical copies.</p>
+<p><code>E.2.2</code> People interacting with the library, such as
 members and librarians.</p>
-<p><code>E.2.4</code>Rules defined by the library regarding borrowing
+<p><code>E.2.3</code> Rules defined by the library regarding borrowing
 and returning books.</p>
-<p><code>E.2.5</code>Time-related aspects, including loan durations and
+<p><code>E.2.4</code> Time-related aspects, including loan durations and
 due dates.</p>
-<p><code>E.2.6</code>These elements exist regardless of the system and
+<p><code>E.2.5</code> These elements exist regardless of the system and
 are simply represented and managed by it.</p>
 <h3 id="e3">E.3 Constraints</h3>
-<p><code>E.3.1</code>The Library Management System must respect the
-following constraints:</p>
-<p><code>E.3.2</code>A physical copy can only be loaned to one member at
-a time.</p>
-<p><code>E.3.3</code>Borrowing conditions, such as loan duration and
+<p>The Library Management System must respect the following
+constraints:</p>
+<p><code>E.3.1</code> A physical copy can only be loaned to one member
+at a time.</p>
+<p><code>E.3.2</code> Borrowing conditions, such as loan duration and
 maximum number of loans, are defined by the library.</p>
-<p><code>E.3.4</code>Only registered members are allowed to borrow
+<p><code>E.3.3</code> Only registered members are allowed to borrow
 books.</p>
-<p><code>E.3.5</code>Librarians are responsible for keeping the catalog
+<p><code>E.3.4</code> Librarians are responsible for keeping the catalog
 accurate and up to date.</p>
-<p><code>E.3.6</code>The system must always reflect real library
+<p><code>E.3.5</code> The system must always reflect real library
 operations consistently.</p>
 <h3 id="e4">E.4 Assumptions</h3>
-<p><code>E.4.1</code>The following assumptions are made about the
-environment:</p>
-<p><code>E.4.2</code>Each book can be uniquely identified using standard
-metadata.</p>
-<p><code>E.4.3</code>Physical copies are tracked individually.</p>
-<p><code>E.4.4</code>Members follow the library’s rules when borrowing
+<p>The following assumptions are made about the environment:</p>
+<p><code>E.4.1</code> Each book can be uniquely identified using
+standard metadata.</p>
+<p><code>E.4.2</code> Physical copies are tracked individually.</p>
+<p><code>E.4.3</code> Members follow the library’s rules when borrowing
 and returning books.</p>
-<p><code>E.4.5</code>Library policies do not change frequently.</p>
-<p><code>E.4.6</code>The system is initially designed for a single
+<p><code>E.4.4</code> Library policies do not change frequently.</p>
+<p><code>E.4.5</code> The system is initially designed for a single
 library.</p>
 <h3 id="e5">E.5 Effects</h3>
-<p><code>E.5.1</code>The introduction of the system has several effects
-on the library environment:</p>
-<p><code>E.5.2</code>Manual tracking of loans and inventory is
+<p>The introduction of the system has several effects on the library
+environment:</p>
+<p><code>E.5.1</code> Manual tracking of loans and inventory is
 reduced.</p>
-<p><code>E.5.3</code>Information about availability and loan status
+<p><code>E.5.2</code> Information about availability and loan status
 becomes more accessible.</p>
-<p><code>E.5.4</code>Lending rules are applied more consistently.</p>
-<p><code>E.5.5</code>Communication between members and librarians is
+<p><code>E.5.3</code> Lending rules are applied more consistently.</p>
+<p><code>E.5.4</code> Communication between members and librarians is
 improved.</p>
-<p><code>E.5.6</code>The system supports existing processes without
+<p><code>E.5.5</code> The system supports existing processes without
 changing the library’s policies.</p>
 <h3 id="e6">E.6 Invariants</h3>
-<p><code>E.6.1</code>The following properties must always remain
-true:</p>
-<p><code>E.6.2</code>A copy cannot be available and on loan at the same
+<p>The following properties must always remain true:</p>
+<p><code>E.6.1</code> A copy cannot be available and on loan at the same
 time.</p>
-<p><code>E.6.3</code>Each loan is linked to exactly one member and one
+<p><code>E.6.2</code> Each loan is linked to exactly one member and one
 copy.</p>
-<p><code>E.6.4</code>Once a copy is returned, it becomes available
+<p><code>E.6.3</code> Once a copy is returned, it becomes available
 again.</p>
-<p><code>E.6.5</code>The catalog only contains books and copies that
+<p><code>E.6.4</code> The catalog only contains books and copies that
 actually exist.</p>
-<p><code>E.6.6</code>The system state must always match the real
+<p><code>E.6.5</code> The system state must always match the real
 situation of the library.</p>
 <h2 id="system">System</h2>
 <p>The System section specifies what the Library Management System must
@@ -387,54 +385,54 @@ person.</p>
 <h3 id="p2">P.2 Personnel characteristics and constraints</h3>
 <p>The project is carried out by final‑year Master’s students in
 Information Technology with prior knowledge in:</p>
-<p><code>P.2.1</code>Object-oriented analysis and design.</p>
-<p><code>P.2.2</code>Software engineering principles.</p>
-<p><code>P.2.3</code>Basic system modeling and documentation.</p>
+<p><code>P.2.1</code> Object-oriented analysis and design.</p>
+<p><code>P.2.2</code> Software engineering principles.</p>
+<p><code>P.2.3</code> Basic system modeling and documentation.</p>
 <p>Constraints include limited development time, academic deadlines, and
 the educational scope of the project.</p>
 <h3 id="p3">P.3 Imposed technical choices</h3>
 <p>No strict technical stack is imposed at the requirements stage.
 However, the project assumes:</p>
-<p><code>P.3.1</code>An object-oriented design approach.</p>
-<p><code>P.3.2</code>Clear separation between domain logic and technical
-concerns.</p>
-<p><code>P.3.3</code>Use of standard modeling and documentation
+<p><code>P.3.1</code> An object-oriented design approach.</p>
+<p><code>P.3.2</code> Clear separation between domain logic and
+technical concerns.</p>
+<p><code>P.3.3</code> Use of standard modeling and documentation
 practices.</p>
 <p>Final technical choices are made later, in accordance with academic
 objectives.</p>
 <h3 id="p4">P.4 Tasks and deliverables</h3>
-<p><code>P.4.1</code>The main project tasks include:</p>
-<p><code>P.4.2</code>Requirements analysis using the PEGS method.</p>
-<p><code>P.4.3</code>System modeling and design.</p>
-<p><code>P.4.4</code>Implementation of core system functionalities.</p>
-<p><code>P.4.5</code>Testing and validation of system behavior.</p>
-<p><code>P.4.6</code>Documentation and final project report.</p>
+<p><code>P.4.1</code> The main project tasks include:</p>
+<p><code>P.4.2</code> Requirements analysis using the PEGS method.</p>
+<p><code>P.4.3</code> System modeling and design.</p>
+<p><code>P.4.4</code> Implementation of core system functionalities.</p>
+<p><code>P.4.5</code> Testing and validation of system behavior.</p>
+<p><code>P.4.6</code> Documentation and final project report.</p>
 <p>Expected deliverables are:</p>
-<p><code>P.4.7</code>A complete requirements document.</p>
-<p><code>P.4.8</code>Design models and diagrams.</p>
-<p><code>P.4.9</code>A functional prototype or implementation.</p>
-<p><code>P.4.10</code>A final written report and presentation.</p>
+<p><code>P.4.7</code> A complete requirements document.</p>
+<p><code>P.4.8</code> Design models and diagrams.</p>
+<p><code>P.4.9</code> A functional prototype or implementation.</p>
+<p><code>P.4.10</code> A final written report and presentation.</p>
 <h3 id="p5">P.5 Schedule and milestones</h3>
 <p>The project is organized around the following milestones:</p>
-<p><code>P.5.1</code>Requirements specification and validation.</p>
-<p><code>P.5.2</code>System design completion.</p>
-<p><code>P.5.3</code>Core implementation phase.</p>
-<p><code>P.5.4</code>Testing and refinement.</p>
-<p><code>P.5.5</code>Final submission and defense.</p>
+<p><code>P.5.1</code> Requirements specification and validation.</p>
+<p><code>P.5.2</code> System design completion.</p>
+<p><code>P.5.3</code> Core implementation phase.</p>
+<p><code>P.5.4</code> Testing and refinement.</p>
+<p><code>P.5.5</code> Final submission and defense.</p>
 <p>Milestones are aligned with the academic calendar.</p>
 <h3 id="p6">P.6 Risks and mitigation analysis</h3>
 <p>Identified project risks include:</p>
-<p><code>P.6.1</code>Underestimating the scope of the system.</p>
-<p><code>P.6.2</code>Insufficient time for testing and refinement.</p>
-<p><code>P.6.3</code>Over‑complex design choices.</p>
+<p><code>P.6.1</code> Underestimating the scope of the system.</p>
+<p><code>P.6.2</code> Insufficient time for testing and refinement.</p>
+<p><code>P.6.3</code> Over‑complex design choices.</p>
 <p>Mitigation strategies include:</p>
-<p><code>P.6.4</code>Clear prioritization of core functionalities.</p>
-<p><code>P.6.5</code>Incremental development.</p>
+<p><code>P.6.4</code> Clear prioritization of core functionalities.</p>
+<p><code>P.6.5</code> Incremental development.</p>
 <p>Regular validation with the academic supervisor</p>
 <h3 id="p7">P.7 Requirements process and report</h3>
 <p>Requirements are gathered from:</p>
-<p><code>P.7.1</code>Provided reference materials.</p>
-<p><code>P.7.2</code>Common library management practices.</p>
-<p><code>P.7.3</code>Academic software engineering principles.</p>
+<p><code>P.7.1</code> Provided reference materials.</p>
+<p><code>P.7.2</code> Common library management practices.</p>
+<p><code>P.7.3</code> Academic software engineering principles.</p>
 </body>
 </html>
