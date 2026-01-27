@@ -24,16 +24,21 @@ jobs:
       - name: Create output directory
         run: mkdir -p public
 
-      - name: Generate HTML from Markdown
+      - name: Generate HTML from Markdown (styled)
         run: |
           pandoc requirements.md \
             -s \
+            --css docs-style.css \
+            --metadata title="Library management system requirements" \
             -o public/requirements.html
 
       - name: Generate PDF from Markdown
         run: |
           pandoc requirements.md \
             -o public/requirements.pdf
+
+      - name: Copy CSS
+        run: cp docs-style.css public/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
