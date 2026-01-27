@@ -29,7 +29,6 @@ jobs:
           pandoc requirements.md \
             -s \
             --css docs-style.css \
-            --metadata title="Library management system requirements" \
             -o public/requirements.html
 
       - name: Generate PDF from Markdown
