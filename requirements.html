@@ -31,7 +31,34 @@
 <h1 id="library-management-system-requirements">Library management
 system requirements</h1>
 <p>Requirement documentation following the PEGS method</p>
-<p>Content :</p>
+<h2 id="changelog">Changelog</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2026-01-19</td>
+<td>Initial draft</td>
+</tr>
+<tr class="even">
+<td>2026-01-20</td>
+<td>Add readme description</td>
+</tr>
+<tr class="odd">
+<td>2026-01-27</td>
+<td>Add requirements markdown base</td>
+</tr>
+<tr class="even">
+<td>2026-01-27</td>
+<td>Add Goals section</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content">Content :</h2>
 <p>Goals : - G.1 Overall context and goals - G.2 Current situation - G.3
 Expected benefits - G.4 Functionality overview - G.5 High-level usage
 scenarios - G.6 Limitations and exclusions - G.7 Stakeholders and
@@ -45,5 +72,110 @@ acceptance criteria</p>
 - P.3 Imposed technical choices - P.4 Tasks and deliverables - P.5
 Schedule and milestones - P.6 Risks and mitigation analysis - P.7
 Requirements process and report</p>
+<h2 id="goals">Goals</h2>
+<p>Goals are “needs of the target organization, which the system will
+address”. While the development team is the principal user of the other
+books, the Goals book addresses a wider audience: essentially, all
+stakeholders. It must contain enough information to provide — if read
+just by itself — a general sketch of the entire project. To this effect,
+chapter G.3 presents a short overview of the system, and G1 will
+typically include some key properties of the environment. As it
+addresses a wide readership, it should be clear and minimize the use of
+specialized technical terms. Together, G1, G2 and G3 describe the
+rationale for the project. It is important to state these justifications
+explicitly. Typically, they are well understood at the start of the
+project, but management and priorities can change (see <a
+href="https://link.springer.com/book/10.1007/978-3-031-06739-6">Handbook</a>).</p>
+<h3 id="g.1-overall-context-and-goals">G.1 Overall context and
+goals</h3>
+<p><strong>Context:</strong> Many libraries still use outdated systems
+that slow down daily tasks. This project defines the requirements for a
+simple, modern Library Management System (LMS) to improve how books and
+users are managed.The goal is to build a clear, adaptable foundation for
+future development.</p>
+<p><strong>Goals:</strong> <code>G.1.1</code> Simplify Lending: To
+streamline the process of checking out and returning books across
+different library branches, making the workflow efficient for staff and
+seamless for users.</p>
+<p><code>G.1.2</code> Enhance Accessibility: To provide a clear,
+user-friendly interface that allows patrons to easily search the
+catalog, place holds, and manage their account status without requiring
+constant staff intervention.</p>
+<p><code>G.1.3</code> Ensure Fair Access: To automatically enforce
+borrowing rules—such as loan limits, reservation queues, and return
+deadlines—ensuring that library resources remain available to the widest
+possible audience.</p>
+<h3 id="g.2-current-situation">G.2 Current situation</h3>
+<p><code>G.2.1</code> Manual Processes: Librarians often rely on manual
+record-keeping or disconnected legacy software, leading to
+inefficiencies in tracking book locations and user status.</p>
+<p><code>G.2.2</code> Lack of Autonomy: Users cannot check real-time
+availability or manage their loans remotely, forcing them to visit the
+library or contact staff for simple queries.</p>
+<p><code>G.2.3</code> Process Definition: The structure and specific
+feature sets for the digital transformation are currently being defined
+to replace these obsolete methods.</p>
+<p><code>G.2.4</code> Poor Visibility: Members have limited visibility
+regarding book availability and their own borrowing status.</p>
+<h3 id="g.3-expected-benefits">G.3 Expected benefits</h3>
+<p><code>G.3.1</code> Improved accuracy and consistency in tracking
+books, copies, and loans.</p>
+<p><code>G.3.2</code> Clear enforcement of library policies such as loan
+periods and borrowing limits.</p>
+<p><code>G.3.3</code> Reduced manual effort for librarians through
+automation of routine operations.</p>
+<p><code>G.3.4</code> Better user experience for members through
+transparent access to borrowing information.</p>
+<p><code>G.3.5</code> A shared and reliable source of truth about the
+state of the library inventory.</p>
+<h3 id="g.4-functionality-overview">G.4 Functionality overview</h3>
+<p><code>G.4.1</code> Manage the library catalog (books and their
+physical copies).</p>
+<p><code>G.4.2</code> Register and manage library members.</p>
+<p><code>G.4.3</code> Handle borrowing, returning, and tracking of
+loans.</p>
+<p><code>G.4.4</code> Enforce lending rules and constraints.</p>
+<p><code>G.4.5</code> Provide visibility into availability, loan status,
+and overdue items.</p>
+<p><code>G.4.6</code> Detailed behavior and technical design choices are
+intentionally deferred to later sections.</p>
+<h3 id="g.5-high-level-usage-scenarios">G.5 High-level usage
+scenarios</h3>
+<p><code>G.5.1</code> A librarian registers new books and copies into
+the system.</p>
+<p><code>G.5.2</code> A member searches for a book and checks its
+availability.</p>
+<p><code>G.5.3</code> A member borrows an available copy following
+library rules.</p>
+<p><code>G.5.4</code> A member returns a borrowed copy.</p>
+<p><code>G.5.5</code> A librarian reviews overdue loans and current
+inventory status.</p>
+<h3 id="g.6-limitations-and-exclusions">G.6 Limitations and
+exclusions</h3>
+<p>The system is not required to address the following aspects:</p>
+<p><code>G.6.1</code> Financial management (payments, fines processing,
+accounting).</p>
+<p><code>G.6.2</code> Acquisition workflows with publishers or
+suppliers.</p>
+<p><code>G.6.3</code> Detailed analytics or recommendation engines.
+Physical security systems (RFID gates, surveillance).</p>
+<p><code>G.6.4</code> Full digital content delivery (e-book readers, DRM
+platforms).</p>
+<h3 id="g.7-stakeholders-and-requirements-sources">G.7 Stakeholders and
+requirements sources</h3>
+<p>Primary stakeholders include:</p>
+<p><code>G.7.1</code> Library members, who borrow and return books.</p>
+<p><code>G.7.2</code> Librarians, responsible for catalog management and
+daily operations.</p>
+<p><code>G.7.3</code> Library administrators, who define policies and
+oversee operations.</p>
+<p><code>G.7.4</code> Development team, responsible for designing and
+implementing the system.</p>
+<p>Requirements are derived from:</p>
+<p><code>G.7.5</code> Common library operational practices.</p>
+<p><code>G.7.6</code> Domain-driven design principles applied to library
+systems.</p>
+<p><code>G.7.7</code> Educational and reference material on library
+management system design.</p>
 </body>
 </html>
