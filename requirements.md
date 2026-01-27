@@ -15,6 +15,7 @@ Requirement documentation following the PEGS method
 ## Content :
 
 Goals :
+
 - [G.1 Overall context and goals](#g1)
 - [G.2 Current situation](#g2)
 - [G.3 Expected benefits](#g3)
@@ -24,6 +25,7 @@ Goals :
 - [G.7 Stakeholders and requirements sources](#g7)
 
 Environment :
+
 - [E.1 Glossary](#e1)
 - [E.2 Components](#e2)
 - [E.3 Constraints](#e3)
@@ -32,6 +34,7 @@ Environment :
 - [E.6 Invariants](#e6)
 
 System :
+
 - [S.1 Components](#s1)
 - [S.2 Functionality](#s2)
 - [S.3 Interfaces](#s3)
@@ -40,6 +43,7 @@ System :
 - [S.6 Verification and acceptance criteria](#s6)
 
 Project :
+
 - [P.1 Roles](#p1)
 - [P.2 Personnel characteristics and constraints](#p2)
 - [P.3 Imposed technical choices](#p3)
