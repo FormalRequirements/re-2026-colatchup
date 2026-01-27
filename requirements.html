@@ -60,36 +60,26 @@ system requirements</h1>
 </tbody>
 </table>
 <h2 id="content">Content :</h2>
-<p>Goals : - <a href="#g1-overall-context-and-goals">G.1 Overall context
-and goals</a> - <a href="#g2-current-situation">G.2 Current
-situation</a> - <a href="#g3-expected-benefits">G.3 Expected
-benefits</a> - <a href="#g4-functionality-overview">G.4 Functionality
-overview</a> - <a href="#g5-high-level-usage-scenarios">G.5 High-level
-usage scenarios</a> - <a href="#g6-limitations-and-exclusions">G.6
-Limitations and exclusions</a> - <a
-href="#g7-stakeholders-and-requirements-sources">G.7 Stakeholders and
+<p>Goals : - <a href="#g1">G.1 Overall context and goals</a> - <a
+href="#g2">G.2 Current situation</a> - <a href="#g3">G.3 Expected
+benefits</a> - <a href="#g4">G.4 Functionality overview</a> - <a
+href="#g5">G.5 High-level usage scenarios</a> - <a href="#g6">G.6
+Limitations and exclusions</a> - <a href="#g7">G.7 Stakeholders and
 requirements sources</a></p>
-<p>Environment : - <a href="#e1-glossary">E.1 Glossary</a> - <a
-href="#e2-components">E.2 Components</a> - <a href="#e3-constraints">E.3
-Constraints</a> - <a href="#e4-assumptions">E.4 Assumptions</a> - <a
-href="#e5-effects">E.5 Effects</a> - <a href="#e6-invariants">E.6
+<p>Environment : - <a href="#e1">E.1 Glossary</a> - <a href="#e2">E.2
+Components</a> - <a href="#e3">E.3 Constraints</a> - <a href="#e4">E.4
+Assumptions</a> - <a href="#e5">E.5 Effects</a> - <a href="#e6">E.6
 Invariants</a></p>
-<p>System : - <a href="#s1-components">S.1 Components</a> - <a
-href="#s2-functionality">S.2 Functionality</a> - <a
-href="#s3-interfaces">S.3 Interfaces</a> - <a
-href="#s4-detailed-usage-scenarios">S.4 Detailed usage scenarios</a> -
-<a href="#s5-prioritization">S.5 Prioritization</a> - <a
-href="#s6-verification-and-acceptance-criteria">S.6 Verification and
-acceptance criteria</a></p>
-<p>Project : - <a href="#p1-roles">P.1 Roles</a> - <a
-href="#p2-personnel-characteristics-and-constraints">P.2 Personnel
-characteristics and constraints</a> - <a
-href="#p3-imposed-technical-choices">P.3 Imposed technical choices</a> -
-<a href="#p4-tasks-and-deliverables">P.4 Tasks and deliverables</a> - <a
-href="#p5-schedule-and-milestones">P.5 Schedule and milestones</a> - <a
-href="#p6-risks-and-mitigation-analysis">P.6 Risks and mitigation
-analysis</a> - <a href="#p7-requirements-process-and-report">P.7
-Requirements process and report</a></p>
+<p>System : - <a href="#s1">S.1 Components</a> - <a href="#s2">S.2
+Functionality</a> - <a href="#s3">S.3 Interfaces</a> - <a href="#s4">S.4
+Detailed usage scenarios</a> - <a href="#s5">S.5 Prioritization</a> - <a
+href="#s6">S.6 Verification and acceptance criteria</a></p>
+<p>Project : - <a href="#p1">P.1 Roles</a> - <a href="#p2">P.2 Personnel
+characteristics and constraints</a> - <a href="#p3">P.3 Imposed
+technical choices</a> - <a href="#p4">P.4 Tasks and deliverables</a> -
+<a href="#p5">P.5 Schedule and milestones</a> - <a href="#p6">P.6 Risks
+and mitigation analysis</a> - <a href="#p7">P.7 Requirements process and
+report</a></p>
 <h2 id="goals">Goals</h2>
 <p>Goals are “needs of the target organization, which the system will
 address”. While the development team is the principal user of the other
@@ -104,8 +94,7 @@ rationale for the project. It is important to state these justifications
 explicitly. Typically, they are well understood at the start of the
 project, but management and priorities can change (see <a
 href="https://link.springer.com/book/10.1007/978-3-031-06739-6">Handbook</a>).</p>
-<h3 id="g.1-overall-context-and-goals">G.1 Overall context and
-goals</h3>
+<h3 id="g1">G.1 Overall context and goals</h3>
 <p><strong>Context:</strong> Many libraries still use outdated systems
 that slow down daily tasks. This project defines the requirements for a
 simple, modern Library Management System (LMS) to improve how books and
@@ -123,7 +112,7 @@ constant staff intervention.</p>
 borrowing rules—such as loan limits, reservation queues, and return
 deadlines—ensuring that library resources remain available to the widest
 possible audience.</p>
-<h3 id="g.2-current-situation">G.2 Current situation</h3>
+<h3 id="g2">G.2 Current situation</h3>
 <p><code>G.2.1</code> Manual Processes: Librarians often rely on manual
 record-keeping or disconnected legacy software, leading to
 inefficiencies in tracking book locations and user status.</p>
@@ -135,7 +124,7 @@ feature sets for the digital transformation are currently being defined
 to replace these obsolete methods.</p>
 <p><code>G.2.4</code> Poor Visibility: Members have limited visibility
 regarding book availability and their own borrowing status.</p>
-<h3 id="g.3-expected-benefits">G.3 Expected benefits</h3>
+<h3 id="g3">G.3 Expected benefits</h3>
 <p><code>G.3.1</code> Improved accuracy and consistency in tracking
 books, copies, and loans.</p>
 <p><code>G.3.2</code> Clear enforcement of library policies such as loan
@@ -146,7 +135,7 @@ automation of routine operations.</p>
 transparent access to borrowing information.</p>
 <p><code>G.3.5</code> A shared and reliable source of truth about the
 state of the library inventory.</p>
-<h3 id="g.4-functionality-overview">G.4 Functionality overview</h3>
+<h3 id="g4">G.4 Functionality overview</h3>
 <p><code>G.4.1</code> Manage the library catalog (books and their
 physical copies).</p>
 <p><code>G.4.2</code> Register and manage library members.</p>
@@ -157,8 +146,7 @@ loans.</p>
 and overdue items.</p>
 <p><code>G.4.6</code> Detailed behavior and technical design choices are
 intentionally deferred to later sections.</p>
-<h3 id="g.5-high-level-usage-scenarios">G.5 High-level usage
-scenarios</h3>
+<h3 id="g5">G.5 High-level usage scenarios</h3>
 <p><code>G.5.1</code> A librarian registers new books and copies into
 the system.</p>
 <p><code>G.5.2</code> A member searches for a book and checks its
@@ -168,8 +156,7 @@ library rules.</p>
 <p><code>G.5.4</code> A member returns a borrowed copy.</p>
 <p><code>G.5.5</code> A librarian reviews overdue loans and current
 inventory status.</p>
-<h3 id="g.6-limitations-and-exclusions">G.6 Limitations and
-exclusions</h3>
+<h3 id="g6">G.6 Limitations and exclusions</h3>
 <p>The system is not required to address the following aspects:</p>
 <p><code>G.6.1</code> Financial management (payments, fines processing,
 accounting).</p>
@@ -180,8 +167,7 @@ suppliers.</p>
 surveillance).</p>
 <p><code>G.6.5</code> Full digital content delivery (e-book readers, DRM
 platforms).</p>
-<h3 id="g.7-stakeholders-and-requirements-sources">G.7 Stakeholders and
-requirements sources</h3>
+<h3 id="g7">G.7 Stakeholders and requirements sources</h3>
 <p>Primary stakeholders include:</p>
 <p><code>G.7.1</code> Library members, who borrow and return books.</p>
 <p><code>G.7.2</code> Librarians, responsible for catalog management and
@@ -202,7 +188,7 @@ System operates. It focuses on the real-world elements of a library, the
 rules that govern it, and the assumptions made about how it functions.
 The goal is to clearly define the domain independently of any technical
 implementation.</p>
-<h3 id="e.1-glossary">E.1 Glossary</h3>
+<h3 id="e1">E.1 Glossary</h3>
 <p><strong>Library:</strong> An organization that manages a collection
 of books and allows registered users to borrow them.</p>
 <p><strong>Book:</strong> A published work identified by information
@@ -219,7 +205,7 @@ for a limited period.</p>
 it can currently be borrowed.</p>
 <p><strong>Loan policy:</strong> A set of rules defining how long and
 how many books a member can borrow.</p>
-<h3 id="e.2-components">E.2 Components</h3>
+<h3 id="e2">E.2 Components</h3>
 <p><code>E.2.1</code>The environment of the system includes several
 real-world elements:</p>
 <p><code>E.2.2</code>A collection of books composed of multiple physical
@@ -232,7 +218,7 @@ and returning books.</p>
 due dates.</p>
 <p><code>E.2.6</code>These elements exist regardless of the system and
 are simply represented and managed by it.</p>
-<h3 id="e.3-constraints">E.3 Constraints</h3>
+<h3 id="e3">E.3 Constraints</h3>
 <p><code>E.3.1</code>The Library Management System must respect the
 following constraints:</p>
 <p><code>E.3.2</code>A physical copy can only be loaned to one member at
@@ -245,7 +231,7 @@ books.</p>
 accurate and up to date.</p>
 <p><code>E.3.6</code>The system must always reflect real library
 operations consistently.</p>
-<h3 id="e.4-assumptions">E.4 Assumptions</h3>
+<h3 id="e4">E.4 Assumptions</h3>
 <p><code>E.4.1</code>The following assumptions are made about the
 environment:</p>
 <p><code>E.4.2</code>Each book can be uniquely identified using standard
@@ -256,7 +242,7 @@ and returning books.</p>
 <p><code>E.4.5</code>Library policies do not change frequently.</p>
 <p><code>E.4.6</code>The system is initially designed for a single
 library.</p>
-<h3 id="e.5-effects">E.5 Effects</h3>
+<h3 id="e5">E.5 Effects</h3>
 <p><code>E.5.1</code>The introduction of the system has several effects
 on the library environment:</p>
 <p><code>E.5.2</code>Manual tracking of loans and inventory is
@@ -268,7 +254,7 @@ becomes more accessible.</p>
 improved.</p>
 <p><code>E.5.6</code>The system supports existing processes without
 changing the library’s policies.</p>
-<h3 id="e.6-invariants">E.6 Invariants</h3>
+<h3 id="e6">E.6 Invariants</h3>
 <p><code>E.6.1</code>The following properties must always remain
 true:</p>
 <p><code>E.6.2</code>A copy cannot be available and on loan at the same
@@ -288,7 +274,7 @@ describes the system’s responsibilities, its internal decomposition, its
 interactions with users and external actors, and the criteria used to
 verify that requirements are met. This section remains independent of
 any specific technical implementation.</p>
-<h3 id="s.1-components">S.1 Components</h3>
+<h3 id="s1">S.1 Components</h3>
 <p>The Library Management System is composed of the following logical
 components:</p>
 <p><code>S.1.1</code> Catalog Management Component, responsible for
@@ -301,7 +287,7 @@ handling borrowing and returning operations.</p>
 applying lending rules and constraints.</p>
 <p><code>S.1.5</code> User Interaction Component, responsible for
 supporting interactions with members and librarians.</p>
-<h3 id="s.2-functionality">S.2 Functionality</h3>
+<h3 id="s2">S.2 Functionality</h3>
 <p>The system shall provide the following functionalities:</p>
 <p><code>S.2.1</code> Register, update, and consult information about
 books and their physical copies.</p>
@@ -316,7 +302,7 @@ loan duration.</p>
 status.</p>
 <p>All functionalities must operate in a consistent and controlled
 manner.</p>
-<h3 id="s.3-interfaces">S.3 Interfaces</h3>
+<h3 id="s3">S.3 Interfaces</h3>
 <p>The system shall expose interfaces to the following actors:</p>
 <p><code>S.3.1</code> Members, who consult the catalog and manage their
 own loans.</p>
@@ -326,7 +312,7 @@ borrowing operations.</p>
 policies.</p>
 <p><code>S.3.4</code> These interfaces must provide clear access to
 system functionality while respecting user roles and permissions.</p>
-<h3 id="s.4-detailed-usage-scenarios">S.4 Detailed usage scenarios</h3>
+<h3 id="s4">S.4 Detailed usage scenarios</h3>
 <p>Typical system usage scenarios include:</p>
 <p><code>S.4.1</code> A librarian registers a new book and its copies in
 the catalog.</p>
@@ -340,7 +326,7 @@ loan.</p>
 overdue items.</p>
 <p>Each scenario must result in a consistent update of the system
 state.</p>
-<h3 id="s.5-prioritization">S.5 Prioritization</h3>
+<h3 id="s5">S.5 Prioritization</h3>
 <p>System functionalities are prioritized as follows:</p>
 <p><code>S.5.1</code> High priority: Loan management, catalog
 management, member registration.</p>
@@ -350,8 +336,7 @@ availability tracking.</p>
 extended consultation features.</p>
 <p>Higher-priority functionalities must be implemented and validated
 first.</p>
-<h3 id="s.6-verification-and-acceptance-criteria">S.6 Verification and
-acceptance criteria</h3>
+<h3 id="s6">S.6 Verification and acceptance criteria</h3>
 <p>The system shall be considered acceptable when:</p>
 <p><code>S.6.1</code> All defined functionalities are implemented and
 operational.</p>
@@ -370,7 +355,7 @@ organized and carried out. It presents the roles involved, the working
 constraints, the planned activities, and the risks associated with the
 project. The objective is to clarify how the system will be developed
 and delivered.</p>
-<h3 id="p.1-roles">P.1 Roles</h3>
+<h3 id="p1">P.1 Roles</h3>
 <p>The project involves the following roles:</p>
 <p><strong>Student developer(s):</strong> responsible for requirements
 analysis, system design, implementation, and testing.</p>
@@ -381,8 +366,7 @@ librarians, and administrators whose needs are considered during the
 project.</p>
 <p>In this academic context, some roles may be assumed by the same
 person.</p>
-<h3 id="p.2-personnel-characteristics-and-constraints">P.2 Personnel
-characteristics and constraints</h3>
+<h3 id="p2">P.2 Personnel characteristics and constraints</h3>
 <p>The project is carried out by final‑year Master’s students in
 Information Technology with prior knowledge in:</p>
 <p><code>P.2.1</code>Object-oriented analysis and design.</p>
@@ -390,8 +374,7 @@ Information Technology with prior knowledge in:</p>
 <p><code>P.2.3</code>Basic system modeling and documentation.</p>
 <p>Constraints include limited development time, academic deadlines, and
 the educational scope of the project.</p>
-<h3 id="p.3-imposed-technical-choices">P.3 Imposed technical
-choices</h3>
+<h3 id="p3">P.3 Imposed technical choices</h3>
 <p>No strict technical stack is imposed at the requirements stage.
 However, the project assumes:</p>
 <p><code>P.3.1</code>An object-oriented design approach.</p>
@@ -401,7 +384,7 @@ concerns.</p>
 practices.</p>
 <p>Final technical choices are made later, in accordance with academic
 objectives.</p>
-<h3 id="p.4-tasks-and-deliverables">P.4 Tasks and deliverables</h3>
+<h3 id="p4">P.4 Tasks and deliverables</h3>
 <p><code>P.4.1</code>The main project tasks include:</p>
 <p><code>P.4.2</code>Requirements analysis using the PEGS method.</p>
 <p><code>P.4.3</code>System modeling and design.</p>
@@ -413,7 +396,7 @@ objectives.</p>
 <p><code>P.4.8</code>Design models and diagrams.</p>
 <p><code>P.4.9</code>A functional prototype or implementation.</p>
 <p><code>P.4.10</code>A final written report and presentation.</p>
-<h3 id="p.5-schedule-and-milestones">P.5 Schedule and milestones</h3>
+<h3 id="p5">P.5 Schedule and milestones</h3>
 <p>The project is organized around the following milestones:</p>
 <p><code>P.5.1</code>Requirements specification and validation.</p>
 <p><code>P.5.2</code>System design completion.</p>
@@ -421,8 +404,7 @@ objectives.</p>
 <p><code>P.5.4</code>Testing and refinement.</p>
 <p><code>P.5.5</code>Final submission and defense.</p>
 <p>Milestones are aligned with the academic calendar.</p>
-<h3 id="p.6-risks-and-mitigation-analysis">P.6 Risks and mitigation
-analysis</h3>
+<h3 id="p6">P.6 Risks and mitigation analysis</h3>
 <p>Identified project risks include:</p>
 <p><code>P.6.1</code>Underestimating the scope of the system.</p>
 <p><code>P.6.2</code>Insufficient time for testing and refinement.</p>
@@ -431,8 +413,7 @@ analysis</h3>
 <p><code>P.6.4</code>Clear prioritization of core functionalities.</p>
 <p><code>P.6.5</code>Incremental development.</p>
 <p>Regular validation with the academic supervisor</p>
-<h3 id="p.7-requirements-process-and-report">P.7 Requirements process
-and report</h3>
+<h3 id="p7">P.7 Requirements process and report</h3>
 <p>Requirements are gathered from:</p>
 <p><code>P.7.1</code>Provided reference materials.</p>
 <p><code>P.7.2</code>Common library management practices.</p>
