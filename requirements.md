@@ -8,8 +8,9 @@ Requirement documentation following the PEGS method
 |------------|-------------|
 | 2026-01-19 | Initial draft |
 | 2026-01-20 | Add readme description |
-| 2026-01-27 | Add requirements markdown base |
-| 2026-01-27 | Add Goals section |
+| 2026-01-20 | Add requirements markdown base |
+| 2026-01-27 | Add Goals, Environment, System & Project section |
+| 2026-01-27 | Add CI/CD pipeline |
 
 ## Content :
 
