@@ -50,11 +50,14 @@ Project :
 ## Goals
 Goals are "needs of the target organization, which the system will address". While the development team is the principal user of the other books, the Goals book addresses a wider audience: essentially, all stakeholders. It must contain enough information to provide — if read just by itself — a general sketch of the entire project. To this effect, chapter G.3 presents a short overview of the system, and G1 will typically include some key properties of the environment. As it addresses a wide readership, it should be clear and minimize the use of specialized technical terms. Together, G1, G2 and G3 describe the rationale for the project. It is important to state these justifications explicitly. Typically, they are well understood at the start of the project, but management and priorities can change (see [Handbook](https://link.springer.com/book/10.1007/978-3-031-06739-6)).
 
-### G.1 Overall context and goals
-**Context:** Many libraries still use outdated systems that slow down daily tasks. This project defines the requirements for a simple, modern Library Management System (LMS) to improve how books and users are managed.The goal is to build a clear, adaptable foundation for future development.
+**Context:**
+
+Many libraries still use outdated systems that slow down daily tasks. This project defines the requirements for a simple, modern Library Management System (LMS) to improve how books and users are managed.The goal is to build a clear, adaptable foundation for future development.
 
 **Goals:**
+
 `G.1.1` Simplify Lending: To streamline the process of checking out and returning books across different library branches, making the workflow efficient for staff and seamless for users.
+
 
 
 `G.1.2` Enhance Accessibility: To provide a clear, user-friendly interface that allows patrons to easily search the catalog, place holds, and manage their account status without requiring constant staff intervention.
@@ -136,3 +139,88 @@ Requirements are derived from:
 `G.7.6` Domain-driven design principles applied to library systems.
 
 `G.7.7` Educational and reference material on library management system design.
+
+## Environment
+This section describes the context in which the Library Management System operates. It focuses on the real-world elements of a library, the rules that govern it, and the assumptions made about how it functions. The goal is to clearly define the domain independently of any technical implementation.
+
+### E.1 Glossary
+**Library:** An organization that manages a collection of books and allows registered users to borrow them.
+
+**Book:** A published work identified by information such as title, author, and ISBN.
+
+**Copy:** A physical instance of a book that can be borrowed by a member.
+
+**Member:** A registered user of the library who is allowed to borrow books.
+
+**Librarian:** A staff member responsible for managing the library’s collection and supervising borrowing activities.
+
+**Loan:** The action of lending a book copy to a member for a limited period.
+
+**Availability:** The state of a copy indicating whether it can currently be borrowed.
+
+**Loan policy:** A set of rules defining how long and how many books a member can borrow.
+
+### E.2 Components
+`E.2.1`The environment of the system includes several real-world elements:
+
+`E.2.2`A collection of books composed of multiple physical copies.
+
+`E.2.3`People interacting with the library, such as members and librarians.
+
+`E.2.4`Rules defined by the library regarding borrowing and returning books.
+
+`E.2.5`Time-related aspects, including loan durations and due dates.
+
+`E.2.6`These elements exist regardless of the system and are simply represented and managed by it.
+
+### E.3 Constraints
+`E.3.1`The Library Management System must respect the following constraints:
+
+`E.3.2`A physical copy can only be loaned to one member at a time.
+
+`E.3.3`Borrowing conditions, such as loan duration and maximum number of loans, are defined by the library.
+
+`E.3.4`Only registered members are allowed to borrow books.
+
+`E.3.5`Librarians are responsible for keeping the catalog accurate and up to date.
+
+`E.3.6`The system must always reflect real library operations consistently.
+
+### E.4 Assumptions
+`E.4.1`The following assumptions are made about the environment:
+
+`E.4.2`Each book can be uniquely identified using standard metadata.
+
+`E.4.3`Physical copies are tracked individually.
+
+`E.4.4`Members follow the library’s rules when borrowing and returning books.
+
+`E.4.5`Library policies do not change frequently.
+
+`E.4.6`The system is initially designed for a single library.
+
+### E.5 Effects
+`E.5.1`The introduction of the system has several effects on the library environment:
+
+`E.5.2`Manual tracking of loans and inventory is reduced.
+
+`E.5.3`Information about availability and loan status becomes more accessible.
+
+`E.5.4`Lending rules are applied more consistently.
+
+`E.5.5`Communication between members and librarians is improved.
+
+`E.5.6`The system supports existing processes without changing the library’s policies.
+
+### E.6 Invariants
+`E.6.1`The following properties must always remain true:
+
+`E.6.2`A copy cannot be available and on loan at the same time.
+
+`E.6.3`Each loan is linked to exactly one member and one copy.
+
+`E.6.4`Once a copy is returned, it becomes available again.
+
+`E.6.5`The catalog only contains books and copies that actually exist.
+
+`E.6.6`The system state must always match the real situation of the library.
