@@ -177,5 +177,90 @@ implementing the system.</p>
 systems.</p>
 <p><code>G.7.7</code> Educational and reference material on library
 management system design.</p>
+<h2 id="environment">Environment</h2>
+<p>This section describes the context in which the Library Management
+System operates. It focuses on the real-world elements of a library, the
+rules that govern it, and the assumptions made about how it functions.
+The goal is to clearly define the domain independently of any technical
+implementation.</p>
+<h3 id="e.1-glossary">E.1 Glossary</h3>
+<p><strong>Library:</strong> An organization that manages a collection
+of books and allows registered users to borrow them.</p>
+<p><strong>Book:</strong> A published work identified by information
+such as title, author, and ISBN.</p>
+<p><strong>Copy:</strong> A physical instance of a book that can be
+borrowed by a member.</p>
+<p><strong>Member:</strong> A registered user of the library who is
+allowed to borrow books.</p>
+<p><strong>Librarian:</strong> A staff member responsible for managing
+the library’s collection and supervising borrowing activities.</p>
+<p><strong>Loan:</strong> The action of lending a book copy to a member
+for a limited period.</p>
+<p><strong>Availability:</strong> The state of a copy indicating whether
+it can currently be borrowed.</p>
+<p><strong>Loan policy:</strong> A set of rules defining how long and
+how many books a member can borrow.</p>
+<h3 id="e.2-components">E.2 Components</h3>
+<p><code>E.2.1</code>The environment of the system includes several
+real-world elements:</p>
+<p><code>E.2.2</code>A collection of books composed of multiple physical
+copies.</p>
+<p><code>E.2.3</code>People interacting with the library, such as
+members and librarians.</p>
+<p><code>E.2.4</code>Rules defined by the library regarding borrowing
+and returning books.</p>
+<p><code>E.2.5</code>Time-related aspects, including loan durations and
+due dates.</p>
+<p><code>E.2.6</code>These elements exist regardless of the system and
+are simply represented and managed by it.</p>
+<h3 id="e.3-constraints">E.3 Constraints</h3>
+<p><code>E.3.1</code>The Library Management System must respect the
+following constraints:</p>
+<p><code>E.3.2</code>A physical copy can only be loaned to one member at
+a time.</p>
+<p><code>E.3.3</code>Borrowing conditions, such as loan duration and
+maximum number of loans, are defined by the library.</p>
+<p><code>E.3.4</code>Only registered members are allowed to borrow
+books.</p>
+<p><code>E.3.5</code>Librarians are responsible for keeping the catalog
+accurate and up to date.</p>
+<p><code>E.3.6</code>The system must always reflect real library
+operations consistently.</p>
+<h3 id="e.4-assumptions">E.4 Assumptions</h3>
+<p><code>E.4.1</code>The following assumptions are made about the
+environment:</p>
+<p><code>E.4.2</code>Each book can be uniquely identified using standard
+metadata.</p>
+<p><code>E.4.3</code>Physical copies are tracked individually.</p>
+<p><code>E.4.4</code>Members follow the library’s rules when borrowing
+and returning books.</p>
+<p><code>E.4.5</code>Library policies do not change frequently.</p>
+<p><code>E.4.6</code>The system is initially designed for a single
+library.</p>
+<h3 id="e.5-effects">E.5 Effects</h3>
+<p><code>E.5.1</code>The introduction of the system has several effects
+on the library environment:</p>
+<p><code>E.5.2</code>Manual tracking of loans and inventory is
+reduced.</p>
+<p><code>E.5.3</code>Information about availability and loan status
+becomes more accessible.</p>
+<p><code>E.5.4</code>Lending rules are applied more consistently.</p>
+<p><code>E.5.5</code>Communication between members and librarians is
+improved.</p>
+<p><code>E.5.6</code>The system supports existing processes without
+changing the library’s policies.</p>
+<h3 id="e.6-invariants">E.6 Invariants</h3>
+<p><code>E.6.1</code>The following properties must always remain
+true:</p>
+<p><code>E.6.2</code>A copy cannot be available and on loan at the same
+time.</p>
+<p><code>E.6.3</code>Each loan is linked to exactly one member and one
+copy.</p>
+<p><code>E.6.4</code>Once a copy is returned, it becomes available
+again.</p>
+<p><code>E.6.5</code>The catalog only contains books and copies that
+actually exist.</p>
+<p><code>E.6.6</code>The system state must always match the real
+situation of the library.</p>
 </body>
 </html>
