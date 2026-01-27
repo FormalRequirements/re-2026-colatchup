@@ -165,69 +165,69 @@ This section describes the context in which the Library Management System operat
 **Loan policy:** A set of rules defining how long and how many books a member can borrow.
 
 ### E.2 Components {#e2}
-`E.2.1`The environment of the system includes several real-world elements:
+The environment of the system includes several real-world elements:
 
-`E.2.2`A collection of books composed of multiple physical copies.
+`E.2.1` A collection of books composed of multiple physical copies.
 
-`E.2.3`People interacting with the library, such as members and librarians.
+`E.2.2` People interacting with the library, such as members and librarians.
 
-`E.2.4`Rules defined by the library regarding borrowing and returning books.
+`E.2.3` Rules defined by the library regarding borrowing and returning books.
 
-`E.2.5`Time-related aspects, including loan durations and due dates.
+`E.2.4` Time-related aspects, including loan durations and due dates.
 
-`E.2.6`These elements exist regardless of the system and are simply represented and managed by it.
+`E.2.5` These elements exist regardless of the system and are simply represented and managed by it.
 
 ### E.3 Constraints {#e3}
-`E.3.1`The Library Management System must respect the following constraints:
+The Library Management System must respect the following constraints:
 
-`E.3.2`A physical copy can only be loaned to one member at a time.
+`E.3.1` A physical copy can only be loaned to one member at a time.
 
-`E.3.3`Borrowing conditions, such as loan duration and maximum number of loans, are defined by the library.
+`E.3.2` Borrowing conditions, such as loan duration and maximum number of loans, are defined by the library.
 
-`E.3.4`Only registered members are allowed to borrow books.
+`E.3.3` Only registered members are allowed to borrow books.
 
-`E.3.5`Librarians are responsible for keeping the catalog accurate and up to date.
+`E.3.4` Librarians are responsible for keeping the catalog accurate and up to date.
 
-`E.3.6`The system must always reflect real library operations consistently.
+`E.3.5` The system must always reflect real library operations consistently.
 
 ### E.4 Assumptions {#e4}
-`E.4.1`The following assumptions are made about the environment:
+The following assumptions are made about the environment:
 
-`E.4.2`Each book can be uniquely identified using standard metadata.
+`E.4.1` Each book can be uniquely identified using standard metadata.
 
-`E.4.3`Physical copies are tracked individually.
+`E.4.2` Physical copies are tracked individually.
 
-`E.4.4`Members follow the library’s rules when borrowing and returning books.
+`E.4.3` Members follow the library’s rules when borrowing and returning books.
 
-`E.4.5`Library policies do not change frequently.
+`E.4.4` Library policies do not change frequently.
 
-`E.4.6`The system is initially designed for a single library.
+`E.4.5` The system is initially designed for a single library.
 
 ### E.5 Effects {#e5}
-`E.5.1`The introduction of the system has several effects on the library environment:
+The introduction of the system has several effects on the library environment:
 
-`E.5.2`Manual tracking of loans and inventory is reduced.
+`E.5.1` Manual tracking of loans and inventory is reduced.
 
-`E.5.3`Information about availability and loan status becomes more accessible.
+`E.5.2` Information about availability and loan status becomes more accessible.
 
-`E.5.4`Lending rules are applied more consistently.
+`E.5.3` Lending rules are applied more consistently.
 
-`E.5.5`Communication between members and librarians is improved.
+`E.5.4` Communication between members and librarians is improved.
 
-`E.5.6`The system supports existing processes without changing the library’s policies.
+`E.5.5` The system supports existing processes without changing the library’s policies.
 
 ### E.6 Invariants {#e6}
-`E.6.1`The following properties must always remain true:
+The following properties must always remain true:
 
-`E.6.2`A copy cannot be available and on loan at the same time.
+`E.6.1` A copy cannot be available and on loan at the same time.
 
-`E.6.3`Each loan is linked to exactly one member and one copy.
+`E.6.2` Each loan is linked to exactly one member and one copy.
 
-`E.6.4`Once a copy is returned, it becomes available again.
+`E.6.3` Once a copy is returned, it becomes available again.
 
-`E.6.5`The catalog only contains books and copies that actually exist.
+`E.6.4` The catalog only contains books and copies that actually exist.
 
-`E.6.6`The system state must always match the real situation of the library.
+`E.6.5` The system state must always match the real situation of the library.
 
 ## System
 
@@ -341,11 +341,11 @@ In this academic context, some roles may be assumed by the same person.
 ### P.2 Personnel characteristics and constraints {#p2}
 The project is carried out by final‑year Master’s students in Information Technology with prior knowledge in:
 
-`P.2.1`Object-oriented analysis and design.
+`P.2.1` Object-oriented analysis and design.
 
-`P.2.2`Software engineering principles.
+`P.2.2` Software engineering principles.
 
-`P.2.3`Basic system modeling and documentation.
+`P.2.3` Basic system modeling and documentation.
 
 Constraints include limited development time, academic deadlines, and the educational scope of the project.
 
@@ -353,74 +353,74 @@ Constraints include limited development time, academic deadlines, and the educat
 No strict technical stack is imposed at the requirements stage.
 However, the project assumes:
 
-`P.3.1`An object-oriented design approach.
+`P.3.1` An object-oriented design approach.
 
-`P.3.2`Clear separation between domain logic and technical concerns.
+`P.3.2` Clear separation between domain logic and technical concerns.
 
-`P.3.3`Use of standard modeling and documentation practices.
+`P.3.3` Use of standard modeling and documentation practices.
 
 Final technical choices are made later, in accordance with academic objectives.
 
 ### P.4 Tasks and deliverables {#p4}
-`P.4.1`The main project tasks include:
+`P.4.1` The main project tasks include:
 
-`P.4.2`Requirements analysis using the PEGS method.
+`P.4.2` Requirements analysis using the PEGS method.
 
-`P.4.3`System modeling and design.
+`P.4.3` System modeling and design.
 
-`P.4.4`Implementation of core system functionalities.
+`P.4.4` Implementation of core system functionalities.
 
-`P.4.5`Testing and validation of system behavior.
+`P.4.5` Testing and validation of system behavior.
 
-`P.4.6`Documentation and final project report.
+`P.4.6` Documentation and final project report.
 
 Expected deliverables are:
 
-`P.4.7`A complete requirements document.
+`P.4.7` A complete requirements document.
 
-`P.4.8`Design models and diagrams.
+`P.4.8` Design models and diagrams.
 
-`P.4.9`A functional prototype or implementation.
+`P.4.9` A functional prototype or implementation.
 
-`P.4.10`A final written report and presentation.
+`P.4.10` A final written report and presentation.
 
 ### P.5 Schedule and milestones {#p5}
 The project is organized around the following milestones:
 
-`P.5.1`Requirements specification and validation.
+`P.5.1` Requirements specification and validation.
 
-`P.5.2`System design completion.
+`P.5.2` System design completion.
 
-`P.5.3`Core implementation phase.
+`P.5.3` Core implementation phase.
 
-`P.5.4`Testing and refinement.
+`P.5.4` Testing and refinement.
 
-`P.5.5`Final submission and defense.
+`P.5.5` Final submission and defense.
 
 Milestones are aligned with the academic calendar.
 
 ### P.6 Risks and mitigation analysis {#p6}
 Identified project risks include:
 
-`P.6.1`Underestimating the scope of the system.
+`P.6.1` Underestimating the scope of the system.
 
-`P.6.2`Insufficient time for testing and refinement.
+`P.6.2` Insufficient time for testing and refinement.
 
-`P.6.3`Over‑complex design choices.
+`P.6.3` Over‑complex design choices.
 
 Mitigation strategies include:
 
-`P.6.4`Clear prioritization of core functionalities.
+`P.6.4` Clear prioritization of core functionalities.
 
-`P.6.5`Incremental development.
+`P.6.5` Incremental development.
 
 Regular validation with the academic supervisor
 
 ### P.7 Requirements process and report {#p7}
 Requirements are gathered from:
 
-`P.7.1`Provided reference materials.
+`P.7.1` Provided reference materials.
 
-`P.7.2`Common library management practices.
+`P.7.2` Common library management practices.
 
-`P.7.3`Academic software engineering principles.
+`P.7.3` Academic software engineering principles.
