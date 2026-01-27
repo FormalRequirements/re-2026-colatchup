@@ -1,0 +1,47 @@
+name: Build and Publish Requirements Documentation
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-latex-extra
+
+      - name: Create output directory
+        run: mkdir -p public
+
+      - name: Generate HTML from Markdown (styled)
+        run: |
+          pandoc requirements.md \
+            -s \
+            --css docs-style.css \
+            --metadata title="Library management system requirements" \
+            -o public/requirements.html
+
+      - name: Generate PDF from Markdown
+        run: |
+          pandoc requirements.md \
+            -o public/requirements.pdf
+
+      - name: Copy CSS
+        run: cp docs-style.css public/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
