@@ -262,5 +262,88 @@ again.</p>
 actually exist.</p>
 <p><code>E.6.6</code>The system state must always match the real
 situation of the library.</p>
+<h2 id="system">System</h2>
+<p>The System section specifies what the Library Management System must
+do and how it is structured from a requirements perspective. It
+describes the system’s responsibilities, its internal decomposition, its
+interactions with users and external actors, and the criteria used to
+verify that requirements are met. This section remains independent of
+any specific technical implementation.</p>
+<h3 id="s.1-components">S.1 Components</h3>
+<p>The Library Management System is composed of the following logical
+components:</p>
+<p><code>S.1.1</code> Catalog Management Component, responsible for
+maintaining information about books and their copies.</p>
+<p><code>S.1.2</code> Member Management Component, responsible for
+registering and maintaining member data.</p>
+<p><code>S.1.3</code> Loan Management Component, responsible for
+handling borrowing and returning operations.</p>
+<p><code>S.1.4</code> Policy Enforcement Component, responsible for
+applying lending rules and constraints.</p>
+<p><code>S.1.5</code> User Interaction Component, responsible for
+supporting interactions with members and librarians.</p>
+<h3 id="s.2-functionality">S.2 Functionality</h3>
+<p>The system shall provide the following functionalities:</p>
+<p><code>S.2.1</code> Register, update, and consult information about
+books and their physical copies.</p>
+<p><code>S.2.2</code> Register and manage library members.</p>
+<p><code>S.2.3</code> Allow members to borrow available copies according
+to library rules.</p>
+<p><code>S.2.4</code> Allow members to return borrowed copies.</p>
+<p><code>S.2.5</code> Track active loans and their due dates.</p>
+<p><code>S.2.6</code> Enforce loan policies such as borrowing limits and
+loan duration.</p>
+<p><code>S.2.7</code> Provide visibility into availability and loan
+status.</p>
+<p>All functionalities must operate in a consistent and controlled
+manner.</p>
+<h3 id="s.3-interfaces">S.3 Interfaces</h3>
+<p>The system shall expose interfaces to the following actors:</p>
+<p><code>S.3.1</code> Members, who consult the catalog and manage their
+own loans.</p>
+<p><code>S.3.2</code> Librarians, who manage the catalog and supervise
+borrowing operations.</p>
+<p><code>S.3.3</code> Administrators, who define or update library
+policies.</p>
+<p><code>S.3.4</code> These interfaces must provide clear access to
+system functionality while respecting user roles and permissions.</p>
+<h3 id="s.4-detailed-usage-scenarios">S.4 Detailed usage scenarios</h3>
+<p>Typical system usage scenarios include:</p>
+<p><code>S.4.1</code> A librarian registers a new book and its copies in
+the catalog.</p>
+<p><code>S.4.2</code> A member searches for a book and checks copy
+availability.</p>
+<p><code>S.4.3</code> A member borrows an available copy, creating a
+loan record.</p>
+<p><code>S.4.4</code> A member returns a borrowed copy, closing the
+loan.</p>
+<p><code>S.4.5</code> A librarian reviews current loans and identifies
+overdue items.</p>
+<p>Each scenario must result in a consistent update of the system
+state.</p>
+<h3 id="s.5-prioritization">S.5 Prioritization</h3>
+<p>System functionalities are prioritized as follows:</p>
+<p><code>S.5.1</code> High priority: Loan management, catalog
+management, member registration.</p>
+<p><code>S.5.2</code> Medium priority: Policy enforcement and
+availability tracking.</p>
+<p><code>S.5.3</code> Low priority: Administrative reporting and
+extended consultation features.</p>
+<p>Higher-priority functionalities must be implemented and validated
+first.</p>
+<h3 id="s.6-verification-and-acceptance-criteria">S.6 Verification and
+acceptance criteria</h3>
+<p>The system shall be considered acceptable when:</p>
+<p><code>S.6.1</code> All defined functionalities are implemented and
+operational.</p>
+<p><code>S.6.2</code> Lending rules are consistently enforced.</p>
+<p><code>S.6.3</code> System state accurately reflects real-world
+library operations.</p>
+<p><code>S.6.4</code> Invariants defined in the Environment section are
+preserved.</p>
+<p><code>S.6.5</code> Usage scenarios can be executed without
+inconsistency or data loss.</p>
+<p>Verification will be performed through scenario-based testing and
+stakeholder validation.</p>
 </body>
 </html>
