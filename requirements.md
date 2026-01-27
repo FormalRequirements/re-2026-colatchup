@@ -48,6 +48,7 @@ Project :
 - P.6 Risks and mitigation analysis
 - P.7 Requirements process and report
 
+
 ## Goals
 Goals are "needs of the target organization, which the system will address". While the development team is the principal user of the other books, the Goals book addresses a wider audience: essentially, all stakeholders. It must contain enough information to provide — if read just by itself — a general sketch of the entire project. To this effect, chapter G.3 presents a short overview of the system, and G1 will typically include some key properties of the environment. As it addresses a wide readership, it should be clear and minimize the use of specialized technical terms. Together, G1, G2 and G3 describe the rationale for the project. It is important to state these justifications explicitly. Typically, they are well understood at the start of the project, but management and priorities can change (see [Handbook](https://link.springer.com/book/10.1007/978-3-031-06739-6)).
 
@@ -316,3 +317,106 @@ The system shall be considered acceptable when:
 `S.6.5` Usage scenarios can be executed without inconsistency or data loss.
 
 Verification will be performed through scenario-based testing and stakeholder validation.
+
+
+## Project
+This section describes how the Library Management System project is organized and carried out. It presents the roles involved, the working constraints, the planned activities, and the risks associated with the project. The objective is to clarify how the system will be developed and delivered.
+
+### P.1 Roles
+The project involves the following roles:
+
+**Student developer(s):** responsible for requirements analysis, system design, implementation, and testing.
+
+**Academic supervisor:** provides guidance, validates methodological choices, and evaluates the project.
+
+**Stakeholders (simulated):** represent library members, librarians, and administrators whose needs are considered during the project.
+
+In this academic context, some roles may be assumed by the same person.
+
+### P.2 Personnel characteristics and constraints
+The project is carried out by final‑year Master’s students in Information Technology with prior knowledge in:
+
+`P.2.1`Object-oriented analysis and design.
+
+`P.2.1`Software engineering principles.
+
+`P.2.1`Basic system modeling and documentation.
+
+Constraints include limited development time, academic deadlines, and the educational scope of the project.
+
+### P.3 Imposed technical choices
+No strict technical stack is imposed at the requirements stage.
+However, the project assumes:
+
+`P.3.1`An object-oriented design approach.
+
+`P.3.2`Clear separation between domain logic and technical concerns.
+
+`P.3.3`Use of standard modeling and documentation practices.
+
+Final technical choices are made later, in accordance with academic objectives.
+
+### P.4 Tasks and deliverables
+`P.4.1`The main project tasks include:
+
+`P.4.2`Requirements analysis using the PEGS method.
+
+`P.4.3`System modeling and design.
+
+`P.4.4`Implementation of core system functionalities.
+
+`P.4.5`Testing and validation of system behavior.
+
+`P.4.6`Documentation and final project report.
+
+Expected deliverables are:
+
+`P.4.7`A complete requirements document.
+
+`P.4.8`Design models and diagrams.
+
+`P.4.9`A functional prototype or implementation.
+
+`P.4.10`A final written report and presentation.
+
+### P.5 Schedule and milestones
+The project is organized around the following milestones:
+
+`P.5.1`Requirements specification and validation.
+
+`P.5.2`System design completion.
+
+`P.5.3`Core implementation phase.
+
+`P.5.4`Testing and refinement.
+
+`P.5.5`Final submission and defense.
+
+Milestones are aligned with the academic calendar.
+
+### P.6 Risks and mitigation analysis
+Identified project risks include:
+
+`P.6.1`Underestimating the scope of the system.
+
+`P.6.2`Insufficient time for testing and refinement.
+
+`P.6.3`Over‑complex design choices.
+
+Mitigation strategies include:
+
+`P.6.4`Clear prioritization of core functionalities.
+
+`P.6.5`Incremental development.
+
+Regular validation with the academic supervisor
+
+### P.7 Requirements process and report
+Requirements are gathered from:
+
+`P.7.1`Provided reference materials.
+
+`P.7.2`Common library management practices.
+
+`P.7.3`Academic software engineering principles.
+
