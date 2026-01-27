@@ -2,7 +2,16 @@
 
 Requirement documentation following the PEGS method
 
-Content :
+## Changelog
+
+| Date       | Description |
+|------------|-------------|
+| 2026-01-19 | Initial draft |
+| 2026-01-20 | Add readme description |
+| 2026-01-27 | Add requirements markdown base |
+| 2026-01-27 | Add Goals section |
+
+## Content :
 
 Goals :
 - G.1 Overall context and goals
@@ -38,3 +47,92 @@ Project :
 - P.6 Risks and mitigation analysis
 - P.7 Requirements process and report
 
+## Goals
+Goals are "needs of the target organization, which the system will address". While the development team is the principal user of the other books, the Goals book addresses a wider audience: essentially, all stakeholders. It must contain enough information to provide — if read just by itself — a general sketch of the entire project. To this effect, chapter G.3 presents a short overview of the system, and G1 will typically include some key properties of the environment. As it addresses a wide readership, it should be clear and minimize the use of specialized technical terms. Together, G1, G2 and G3 describe the rationale for the project. It is important to state these justifications explicitly. Typically, they are well understood at the start of the project, but management and priorities can change (see [Handbook](https://link.springer.com/book/10.1007/978-3-031-06739-6)).
+
+### G.1 Overall context and goals
+**Context:** Many libraries still use outdated systems that slow down daily tasks. This project defines the requirements for a simple, modern Library Management System (LMS) to improve how books and users are managed.The goal is to build a clear, adaptable foundation for future development.
+
+**Goals:**
+`G.1.1` Simplify Lending: To streamline the process of checking out and returning books across different library branches, making the workflow efficient for staff and seamless for users.
+
+
+`G.1.2` Enhance Accessibility: To provide a clear, user-friendly interface that allows patrons to easily search the catalog, place holds, and manage their account status without requiring constant staff intervention.
+
+
+`G.1.3` Ensure Fair Access: To automatically enforce borrowing rules—such as loan limits, reservation queues, and return deadlines—ensuring that library resources remain available to the widest possible audience.
+
+### G.2 Current situation
+`G.2.1` Manual Processes: Librarians often rely on manual record-keeping or disconnected legacy software, leading to inefficiencies in tracking book locations and user status.
+
+`G.2.2` Lack of Autonomy: Users cannot check real-time availability or manage their loans remotely, forcing them to visit the library or contact staff for simple queries.
+
+`G.2.3` Process Definition: The structure and specific feature sets for the digital transformation are currently being defined to replace these obsolete methods.
+
+`G.2.4` Poor Visibility: Members have limited visibility regarding book availability and their own borrowing status.
+
+### G.3 Expected benefits
+`G.3.1` Improved accuracy and consistency in tracking books, copies, and loans.
+
+`G.3.2` Clear enforcement of library policies such as loan periods and borrowing limits.
+
+`G.3.3` Reduced manual effort for librarians through automation of routine operations.
+
+`G.3.4` Better user experience for members through transparent access to borrowing information.
+
+`G.3.5` A shared and reliable source of truth about the state of the library inventory.
+
+### G.4 Functionality overview
+`G.4.1` Manage the library catalog (books and their physical copies).
+
+`G.4.2` Register and manage library members.
+
+`G.4.3` Handle borrowing, returning, and tracking of loans.
+
+`G.4.4` Enforce lending rules and constraints.
+
+`G.4.5` Provide visibility into availability, loan status, and overdue items.
+
+`G.4.6` Detailed behavior and technical design choices are intentionally deferred to later sections.
+
+### G.5 High-level usage scenarios
+`G.5.1` A librarian registers new books and copies into the system.
+
+`G.5.2` A member searches for a book and checks its availability.
+
+`G.5.3` A member borrows an available copy following library rules.
+
+`G.5.4` A member returns a borrowed copy.
+
+`G.5.5` A librarian reviews overdue loans and current inventory status.
+
+### G.6 Limitations and exclusions
+The system is not required to address the following aspects:
+
+`G.6.1` Financial management (payments, fines processing, accounting).
+
+`G.6.2` Acquisition workflows with publishers or suppliers.
+
+`G.6.3` Detailed analytics or recommendation engines.
+Physical security systems (RFID gates, surveillance).
+
+`G.6.4` Full digital content delivery (e-book readers, DRM platforms).
+
+### G.7 Stakeholders and requirements sources
+Primary stakeholders include:
+
+`G.7.1` Library members, who borrow and return books.
+
+`G.7.2` Librarians, responsible for catalog management and daily operations.
+
+`G.7.3` Library administrators, who define policies and oversee operations.
+
+`G.7.4` Development team, responsible for designing and implementing the system.
+
+Requirements are derived from:
+
+`G.7.5` Common library operational practices.
+
+`G.7.6` Domain-driven design principles applied to library systems.
+
+`G.7.7` Educational and reference material on library management system design.
