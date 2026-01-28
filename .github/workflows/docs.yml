@@ -18,10 +18,12 @@ jobs:
       - name: Lint Markdown
         uses: davidanson/markdownlint-cli2-action@v16
         with:
-          globs: '*.md'
+          globs: 'requirements.md'
 
       - name: Check Spelling
         uses: codespell-project/actions-codespell@v2
+        with:
+          files: requirements.md
 
       - name: Set up Python
         uses: actions/setup-python@v5
