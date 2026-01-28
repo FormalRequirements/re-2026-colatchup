@@ -7,11 +7,11 @@ And additionally, a specific feature branch for CI/CD.
 
 ## Requirements Documentation Strategy
 
-TODO
+We document the LMS requirements in Markdown, following the PEGS methodology structure (Goals, Environment, System, Project). The main requirements document in this repository is [requirements.md](https://github.com/FormalRequirements/re-2026-colatchup/blob/main/requirements.md). The final version is published in both HTML and PDF for easy reading, sharing, and evaluation: [HTML version](https://formalrequirements.github.io/re-2026-colatchup/requirements.html) and [PDF version](https://formalrequirements.github.io/re-2026-colatchup/requirements.pdf).
 
 ## CI/CD
 
-TODO
+To support a CI/CD-friendly workflow, we set up a GitHub Actions pipeline that automatically builds and publishes our requirements documentation. On every push to main, the workflow converts [requirements.md](https://github.com/FormalRequirements/re-2026-colatchup/blob/main/requirements.md) into a styled HTML page (using docs-style.css) and a PDF (via Pandoc + LaTeX), then deploys the generated artifacts to GitHub Pages. This ensures the published documentation stays in sync with the repository. For details, see the workflow definition in [docs.yml](https://github.com/FormalRequirements/re-2026-colatchup/blob/main/.github/workflows/docs.yml).
 
 ## Contributors
 
