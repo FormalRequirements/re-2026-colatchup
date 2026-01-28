@@ -419,7 +419,7 @@ In this academic context, some roles may be assumed by the same person.
 
 ### P.2 Personnel characteristics and constraints {#p2}
 
-The project is carried out by final‑year Master’s students in Information
+The project is carried out by final-year Master’s students in Information
 Technology with prior knowledge in:
 
 `P.2.1` Object-oriented analysis and design.
@@ -492,7 +492,7 @@ Identified project risks include:
 
 `P.6.2` Insufficient time for testing and refinement.
 
-`P.6.3` Over‑complex design choices.
+`P.6.3` Over-complex design choices.
 
 Mitigation strategies include:
 
