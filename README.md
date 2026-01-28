@@ -7,7 +7,7 @@ And additionally, a specific feature branch for CI/CD.
 
 ## Requirements Documentation Strategy
 
-We document the LMS requirements in Markdown, following the PEGS methodology structure (Goals, Environment, System, Project). The main requirements document in this repository is [requirements.md](https://github.com/FormalRequirements/re-2026-colatchup/blob/main/requirements.md). The final version is published in both HTML and PDF for easy reading, sharing, and evaluation: [HTML version](https://formalrequirements.github.io/re-2026-colatchup/requirements.html) and [PDF version](https://formalrequirements.github.io/re-2026-colatchup/requirements.pdf).
+We document the LMS requirements in Markdown, following the PEGS methodology structure (Goals, Environment, System, Project). The main requirements document in this repository is [requirements.md](https://github.com/FormalRequirements/re-2026-colatchup/blob/main/requirements.md). The final version is published in both HTML and PDF for easy reading, sharing, and evaluation: [HTML version](https://formalrequirements.github.io/re-2026-colatchup) and [PDF version](https://formalrequirements.github.io/re-2026-colatchup/requirements.pdf).
 
 ## CI/CD
 

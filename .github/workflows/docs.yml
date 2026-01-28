@@ -29,7 +29,7 @@ jobs:
           pandoc requirements.md \
             -s \
             --css docs-style.css \
-            -o public/requirements.html
+            -o public/index.html
 
       - name: Generate PDF from Markdown
         run: |
