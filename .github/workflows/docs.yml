@@ -23,7 +23,7 @@ jobs:
       - name: Check Spelling
         uses: codespell-project/actions-codespell@v2
         with:
-          files: requirements.md
+          path: requirements.md
 
       - name: Set up Python
         uses: actions/setup-python@v5
