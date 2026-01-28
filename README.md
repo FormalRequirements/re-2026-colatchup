@@ -13,6 +13,12 @@ We document the LMS requirements in Markdown, following the PEGS methodology str
 
 To support a CI/CD-friendly workflow, we set up a GitHub Actions pipeline that automatically builds and publishes our requirements documentation. On every push to main, the workflow converts [requirements.md](https://github.com/FormalRequirements/re-2026-colatchup/blob/main/requirements.md) into a styled HTML page (using docs-style.css) and a PDF (via Pandoc + LaTeX), then deploys the generated artifacts to GitHub Pages. This ensures the published documentation stays in sync with the repository. For details, see the workflow definition in [docs.yml](https://github.com/FormalRequirements/re-2026-colatchup/blob/main/.github/workflows/docs.yml).
 
+Moreover, we have implemented automated tests in [verify_structure.py](https://github.com/FormalRequirements/re-2026-colatchup/blob/main/tests/verify_structure.py) to validate :
+- The presence of all main sections (Goals, Environment, System, Project).
+- The presence of content in each section.
+- A lint of the markdown structure to make sure it is a valid markdown file.
+- Automated spelling checks to catch common typos and errors.
+
 ## Contributors
 
 - [Colin Delrieu](https://github.com/ColinD31).

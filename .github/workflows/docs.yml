@@ -9,7 +9,30 @@ permissions:
   contents: write
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Lint Markdown
+        uses: davidanson/markdownlint-cli2-action@v16
+        with:
+          globs: '*.md'
+
+      - name: Check Spelling
+        uses: codespell-project/actions-codespell@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Verify Documentation Structure
+        run: python tests/verify_structure.py
+
   build-and-deploy:
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
